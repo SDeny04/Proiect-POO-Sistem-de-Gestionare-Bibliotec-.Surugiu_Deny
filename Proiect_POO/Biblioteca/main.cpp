@@ -11,6 +11,7 @@ int main() {
         cout << "Acces respins!\n";
         return 0;
     }
+
     Biblioteca b;
     int opt;
 
@@ -22,17 +23,20 @@ int main() {
         cout << "10.Cauta autor\n11.Cauta titlu\n";
         cout << "12.Sort titlu\n13.Sort autor\n";
         cout << "14.Salveaza\n15.Incarca\n16.Statistici\n0.Exit\n";
+
         cin >> opt;
 
 if (opt == 1) 
 {
     string t, a, e, isbn;
     int an, p;
+
     cin.ignore();
     getline(cin, t);
     getline(cin, a);
     getline(cin, e);
     cin >> an >> p >> isbn;
+
     b.adaugaCarte(t, a, e, an, p, isbn);
 }
 else if (opt == 2) 
